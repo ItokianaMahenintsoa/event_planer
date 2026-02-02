@@ -8,6 +8,10 @@
  8. Create User Model in models/users.py and Config class inside
  9. Create UserSign Model in the same file and the Config class inside
  10. Create signup route
- 11. 
+ 11. Create signing route
+ 12. Create events route
+ 13. Create database/connection.py route
+ 14. Update Events.py
+ s
 
 
