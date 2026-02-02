@@ -7,5 +7,7 @@
  7. Create a Config class in models/events.py: it was an exemple of an Event Object
  8. Create User Model in models/users.py and Config class inside
  9. Create UserSign Model in the same file and the Config class inside
+ 10. Create signup route
+ 11. 
 
 

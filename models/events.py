@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 from typing import List, Optional
 
-class Even(BaseModel):
+class Event(BaseModel):
     id: int
     title: str
     image: str
@@ -10,7 +10,7 @@ class Even(BaseModel):
     location: str
 
 class Config: 
-    schema_extra = {
+    json_schema_extra = {
         "example": {
             "title": "FastAPI Book Launch",
             "image" : "https://linktomyimage.com/image.png",
