@@ -12,6 +12,8 @@
  12. Create events route
  13. Create database/connection.py route
  14. Update Events.py
- s
+ 15. Update database.connection.py
+ 16. Modify routes.py to use database
+ 
 
 
