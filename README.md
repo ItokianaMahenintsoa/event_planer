@@ -8,6 +8,11 @@
  8. Create User Model in models/users.py and Config class inside
  9. Create UserSign Model in the same file and the Config class inside
  10. Create signup route
- 11. 
+ 11. Install beanie
+ 12. Create connection.py in database folder and initialize data
+ 13. Update Events and Users Models 
+ 14. Use Events and Users Model in connection.py
+ 15. Create .env and add DATABASE_URL inside 
+ 16. 
 
 
