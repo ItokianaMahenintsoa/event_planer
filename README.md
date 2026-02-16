@@ -14,6 +14,9 @@
  14. Use Events and Users Model in connection.py
  15. Create .env and add DATABASE_URL inside 
  16. Create database class and CRUD methods inside
- 17. 
+ 17. Update Route files
+ 18. Create a store folder
+ 19. Run this code : mongod --dbpath store
+ 20. 
 
 
