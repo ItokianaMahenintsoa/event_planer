@@ -13,6 +13,7 @@
  13. Update Events and Users Models 
  14. Use Events and Users Model in connection.py
  15. Create .env and add DATABASE_URL inside 
- 16. 
+ 16. Create database class and CRUD methods inside
+ 17. 
 
 
