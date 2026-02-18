@@ -26,6 +26,8 @@
  26. **FIX: Replace bcrypt with argon2** - Switched from bcrypt to argon2-cffi due to version incompatibility and 72-byte limitation
  27. **FIX: Change signin endpoint to JSON** - Replaced OAuth2PasswordRequestForm with UserSignIn model for JSON request body instead of form-data
  28. **FIX: Activate UserSignIn model** - Uncommented UserSignIn model in models/users.py for signin endpoint
+ 29. Update Events route to verify if user is authenticate 
+ 
 
 ## Setup Instructions
 
