@@ -27,7 +27,9 @@
  27. **FIX: Change signin endpoint to JSON** - Replaced OAuth2PasswordRequestForm with UserSignIn model for JSON request body instead of form-data
  28. **FIX: Activate UserSignIn model** - Uncommented UserSignIn model in models/users.py for signin endpoint
  29. Update Events route to verify if user is authenticate 
- 
+ 30. Add Creator field in Event models and update post, update and delete events routes
+ 31. Add CORS middleware in main.py
+
 
 ## Setup Instructions
 
