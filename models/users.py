@@ -34,20 +34,19 @@ class User(Document):
             }
         }
 
+class TokenResponse(BaseModel):
+    access_token: str
+    token_type: str
+
+
 class UserSignIn(BaseModel):
-    email : EmailStr
+    email: EmailStr
     password: str
 
-
-# class UserSignIn(BaseModel):
-#     email: EmailStr
-#     password: str
-
-#     class Config:
-#         schema_extra = {
-#             "example": {
-#                 "email" : "fyeventplanner@fastapiapp.com",
-#                 "password" : "strongpassword123",
-#                 "events" : []
-#             }
-#         }
+    class Config:
+        schema_extra = {
+            "example": {
+                "email" : "fyeventplanner@fastapiapp.com",
+                "password" : "strongpassword123"
+            }
+        }

@@ -9,6 +9,8 @@ from models.events import Event
 
 class Settings(BaseSettings):
     DATABASE_URL : Optional[str] = "mongodb://localhost:27017/event_planner"
+    SECRET_KEY : Optional[str] = "your-secret-key-change-me"
+    
     async def initialize_database(self):
         client = AsyncIOMotorClient(self.DATABASE_URL)
         await init_beanie(
