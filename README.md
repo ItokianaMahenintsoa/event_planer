@@ -29,6 +29,11 @@
  29. Update Events route to verify if user is authenticate 
  30. Add Creator field in Event models and update post, update and delete events routes
  31. Add CORS middleware in main.py
+ 32. Install pytest pytest-asyncio httpx 
+ 33. Create pytest.ini in the app source folder
+ 34. Create tests folder add __init__.py and test_arthmetic_operations.py inside
+ 35. Create conftesst.py in tests folder to setting up the test environment
+ 
 
 
 ## Setup Instructions
