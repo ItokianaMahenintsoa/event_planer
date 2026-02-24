@@ -33,6 +33,7 @@
  33. Create pytest.ini in the app source folder
  34. Create tests folder add __init__.py and test_arthmetic_operations.py inside
  35. Create conftesst.py in tests folder to setting up the test environment
+ 36. Create test_sign_new_user.py to test User sign in feature 
  
 
 

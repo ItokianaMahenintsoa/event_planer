@@ -3,10 +3,21 @@ from routes.users import user_router
 from routes.events import event_router
 from database.connection import Settings
 from fastapi.middleware.cors import CORSMiddleware
-
+from contextlib import asynccontextmanager
 import uvicorn
 
-app = FastAPI()
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    print("App started")
+    settings = Settings()
+    await settings.initialize_database()
+
+    yield
+    print("App stopped")
+
+app = FastAPI(lifespan=lifespan) 
+
+
 origins = ["*"]
 app.add_middleware(
     CORSMiddleware,
@@ -17,10 +28,10 @@ app.add_middleware(
 )
 
 
-@app.on_event("startup")
-async def startup_db_client():
-    settings = Settings()
-    await settings.initialize_database()
+# @app.on_event("startup")
+# async def startup_db_client():
+#     settings = Settings()
+#     await settings.initialize_database()
 
 
 app.include_router(user_router, prefix="/user")

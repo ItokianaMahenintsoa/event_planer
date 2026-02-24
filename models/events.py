@@ -9,7 +9,7 @@ class Event(Document):
     tags : List[str]
     location: str
     creator: Optional[str] = None
-    class Config :
+    class ConfigDict :
         json_schema_extra = {
             "example" : {
                 "title" : "FASTAPI book Launch",
@@ -29,7 +29,7 @@ class EventUpdate(BaseModel) :
     description: Optional[str]
     tags: Optional[List[str]]
     location: Optional[str]
-    class Config : 
+    class ConfigDict : 
         json_schema_extra = {
             "example" : {
                 "title" : "FASTAPI book Launch",
@@ -49,7 +49,7 @@ class EventUpdate(BaseModel) :
 #     tags: List[str]
 #     location: str
 
-# class Config: 
+# class ConfigDict: 
 #     json_schema_extra = {
 #         "example": {
 #             "title": "FastAPI Book Launch",

@@ -9,7 +9,7 @@ from beanie import Document, Link
 #     username: str
 #     events: Optional[List[Event]] = None
 
-#     class Config:
+#     class ConfigDict:
 #         json_schema_extra = {
 #                 "example" : {
 #                     "email": "fastapi@packt.com",
@@ -25,7 +25,7 @@ class User(Document):
     events : Optional[List[Link[Event]]]
     class Settings : 
         name = "users"
-    class Config:
+    class ConfigDict:
         schema_extra = {
             "example" : {
                 "email" : "fastapi@packt.com",
@@ -43,7 +43,7 @@ class UserSignIn(BaseModel):
     email: EmailStr
     password: str
 
-    class Config:
+    class ConfigDict:
         schema_extra = {
             "example": {
                 "email" : "fyeventplanner@fastapiapp.com",

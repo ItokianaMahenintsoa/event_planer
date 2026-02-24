@@ -5,6 +5,7 @@ from main import app
 from database.connection import Settings
 from models.events import Event
 from models.users import User
+from httpx import ASGITransport
 
 @pytest.fixture(scope="session")
 def event_loop():
@@ -20,7 +21,8 @@ async def init_db():
 @pytest.fixture(scope="session")
 async def default_client():
     await init_db()
-    async with httpx.AsyncClient(app = app, base_url="http://app") as client:
+    trasnsport = ASGITransport(app=app)
+    async with httpx.AsyncClient(transport=trasnsport, base_url="http://app") as client:
         yield client
         await Event.find_all().delete()
         await User.find_all().delete()
