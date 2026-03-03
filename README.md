@@ -37,6 +37,7 @@
  37. Create test_sign_new_user.py to test User sign in feature 
  38. Create test_routes.py and insert read all and one events inside
  39. Update test_routes.py to insert testing Create endpoints 
+ 40. Update test_routes.py to insert testing Counting Event items 
  
  
  

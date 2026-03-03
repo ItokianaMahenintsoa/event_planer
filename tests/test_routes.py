@@ -55,3 +55,10 @@ async def test_post_event(default_client: httpx.AsyncClient, access_token: str) 
     response = await default_client.post("/event/new", json=payload, headers=headers)
     assert response.status_code == 200
     assert response.json() == test_response
+
+@pytest.mark.asyncio
+async def test_get_events_count(default_client : httpx.AsyncClient) -> None:
+    response = await default_client.get("/event/")
+    events = response.json()
+    assert response.status_code == 200
+    assert len(events) == 1
