@@ -39,6 +39,7 @@
  39. Update test_routes.py to insert testing Create endpoints 
  40. Update test_routes.py to insert testing Counting Event items 
  41. Update test_routes.py to insert testing Update endpoints
+ 42. Update test_routes.py to insert testing Delete endpoints
  
  
  
