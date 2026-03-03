@@ -35,6 +35,8 @@
  35. Create conftesst.py in tests folder to setting up the test environment
  36. Create test_sign_new_user.py to test User sign up feature 
  37. Create test_sign_new_user.py to test User sign in feature 
+ 38. Create test_routes.py and insert read all and one events inside
+ 
  
  
  
