@@ -38,6 +38,7 @@
  38. Create test_routes.py and insert read all and one events inside
  39. Update test_routes.py to insert testing Create endpoints 
  40. Update test_routes.py to insert testing Counting Event items 
+ 41. Update test_routes.py to insert testing Update endpoints
  
  
  
