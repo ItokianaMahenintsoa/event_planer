@@ -40,6 +40,7 @@
  40. Update test_routes.py to insert testing Counting Event items 
  41. Update test_routes.py to insert testing Update endpoints
  42. Update test_routes.py to insert testing Delete endpoints
+ 43. Install coverage to run all unit test : coverage run -m pytest
  
  
  
